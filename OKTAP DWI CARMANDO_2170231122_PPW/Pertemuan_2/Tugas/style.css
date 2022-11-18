@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(255, 243, 209);
+}
+
+nav {
+    background-color: coral;
+    padding: 5px;
+}
+
+ul {
+    text-align: right;
+}
+
+li {
+    display: inline;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+a:link {
+    color: crimson;
+}
+
+a:active {
+    color: blueviolet;
+}
+
+a:hover{
+    background-color: chartreuse;
+}
+
+table td,
+table th {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(253, 255, 108);
+    color: black;
+}

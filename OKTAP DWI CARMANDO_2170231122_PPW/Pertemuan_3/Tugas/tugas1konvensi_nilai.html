@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Konversi Nilai</title>
+</head>
+<body>
+    <script>
+        function test() {
+            val1 = window.prompt("Input Nilai (0-100): ");
+            if (val1 >= 0 && val1 <= 40)
+                document.write("E")
+            else if (val1 >= 41 && val1 <= 55)
+                document.write("D")
+            else if (val1 >= 56 && val1 <= 60)
+                document.write("C")
+            else if (val1 >= 61 && val1 <= 65)
+                document.write("BC")
+            else if (val1 >= 66 && val1 <= 70)
+                document.write("B")
+            else if (val1 >= 71 && val1 <= 80)
+                document.write("AB")
+            else if (val1 >= 81 && val1 <= 100)
+                document.write("A")
+        }                
+    </script>
+    <input type="button" name="button1" value="Nilai" onclick=test()>
+</body>
+</html>

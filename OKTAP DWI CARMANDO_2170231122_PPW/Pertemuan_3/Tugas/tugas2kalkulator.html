@@ -1,0 +1,41 @@
+<html>
+<head><title>Program Calculator</title></head>
+<body>
+    Bil 1: <input type="text" id="bil1">&nbsp;
+    Bil 2: <input type="text" id="bil2">&nbsp;
+    <input type="button" name="button1" value="+" onclick=tambah()>
+    <input type="button" name="button2" value="-" onclick=kurang()>
+    <input type="button" name="button3" value="x" onclick=kali()>
+    <input type="button" name="button2" value="/" onclick=bagi()>
+    Hasil: <input type="text" id="hasil">
+    <script>
+        var bil1="";
+        var bil2="";
+        var hasil="";
+        function tambah() {
+            bil1=document.getElementById("bil1").value;
+            bil2=document.getElementById("bil2").value;
+            hasil=parseInt(bil1)+parseInt(bil2);
+            document.getElementById("hasil").value=hasil;
+        }                
+        function kurang() {
+            bil1=document.getElementById("bil1").value;
+            bil2=document.getElementById("bil2").value;
+            hasil=parseInt(bil1)-parseInt(bil2);
+            document.getElementById("hasil").value=hasil;
+        }                
+        function kali() {
+            bil1=document.getElementById("bil1").value;
+            bil2=document.getElementById("bil2").value;
+            hasil=parseInt(bil1)*parseInt(bil2);
+          document.getElementById("hasil").value=hasil;
+        }                
+        function bagi() {
+            bil1=document.getElementById("bil1").value;
+            bil2=document.getElementById("bil2").value;
+            hasil=parseInt(bil1)/parseInt(bil2);
+               document.getElementById("hasil").value=hasil;
+        }                
+    </script>
+</body>
+</html>
